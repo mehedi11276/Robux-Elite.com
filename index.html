@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RobuxElite - Buy Robux</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to RobuxElite</h1>
+        <!-- Roblox Profile Link -->
+        <a href="https://www.roblox.com/users/5340249900/profile" target="_blank" title="Visit My Roblox Profile">
+            <img src="Images/roblox-logo.png" alt="Roblox Profile" style="width: 40px; height: 40px;">
+        </a>
+        <p><strong>Visit my Roblox profile!</strong></p>
+    </header>
+
+    <!-- Notice Section -->
+    <section id="notice" class="notice">
+        <p><strong>Notice:</strong> We will send robux to the user's Gmail after you buy a robux package. It takes 10-20 days to send robux. You can absolutely trust us. If you need anymore help please contact us.</p>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages">
+        <h2>Choose Your Package</h2>
+        <div class="card-container">
+            <div class="card" onclick="selectPackage(100, 120)">
+                <h3>100 Robux</h3>
+                <p class="price">120 BDT৳</p>
+            </div>
+            <div class="card" onclick="selectPackage(200, 240)">
+                <h3>200 Robux</h3>
+                <p class="price">240 BDT৳</p>
+            </div>
+            <div class="card" onclick="selectPackage(300, 360)">
+                <h3>300 Robux</h3>
+                <p class="price">360 BDT৳</p>
+            </div>
+            <div class="card" onclick="selectPackage(400, 480)">
+                <h3>400 Robux</h3>
+                <p class="price">480 BDT৳</p>
+            </div>
+            <div class="card" onclick="selectPackage(500, 600)">
+                <h3>500 Robux</h3>
+                <p class="price">600 BDT৳</p>
+            </div>
+            <div class="card" onclick="selectPackage(600, 720)">
+                <h3>600 Robux</h3>
+                <p class="price">720 BDT৳</p>
+            </div>
+            <div class="card" onclick="selectPackage(700, 840)">
+                <h3>700 Robux</h3>
+                <p class="price">840 BDT৳</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section id="payment" class="payment">
+        <h2>Complete Your Payment</h2>
+        <p>Send money to: <span class="highlight">BKash +8801965223559</span></p>
+        <form id="payment-form">
+            <input type="hidden" id="selected-package" value="">
+            <input type="hidden" id="package-price" value="">
+            <input type="text" id="transaction-id" placeholder="Enter Transaction ID" required>
+            <input type="text" id="user-number" placeholder="Your bKash Number" required> <!-- User Number Field -->
+            <button type="submit" class="btn">Confirm Payment</button>
+        </form>
+    </section>
+
+    <!-- User Purchase Status History -->
+    <section id="user-status-history" class="user-status-history">
+        <h2>Your Purchase History</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Package</th>
+                    <th>Price</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                    <th>Transaction ID</th>
+                    <th>User Number</th> <!-- Added User Number Column -->
+                </tr>
+            </thead>
+            <tbody id="history-body">
+                <!-- User history records will appear here -->
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>

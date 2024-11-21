@@ -1,0 +1,89 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #2a5298, #1e3c72);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Login Form */
+.login-form {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-form h2 {
+    font-size: 2rem;
+    color: #f9d342;
+    margin-bottom: 20px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #f9d342;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+    font-size: 1rem;
+}
+
+.login-form input:focus {
+    border-color: #f9d342;
+    outline: none;
+}
+
+.login-form .btn {
+    width: 100%;
+    padding: 10px;
+    background: #f9d342;
+    color: #2a5298;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form .btn:hover {
+    background-color: #e0be30;
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-size: 1rem;
+    margin-top: 15px;
+    display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .login-form {
+        width: 90%;
+        padding: 30px;
+    }
+}

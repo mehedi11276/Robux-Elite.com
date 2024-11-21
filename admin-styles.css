@@ -1,0 +1,155 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Admin Panel Container */
+#orders-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#orders-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Orders Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+td {
+    background-color: #fafafa;
+}
+
+/* Status Styling */
+.status {
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.status.pending {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.status.paid {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.status.rejected {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+/* Button Styles */
+button {
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-right: 10px;
+}
+
+/* Approve Button */
+.approve-btn {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.approve-btn:hover {
+    background-color: #27ae60;
+}
+
+/* Reject Button */
+.reject-btn {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.reject-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Reset Button */
+.reset-btn {
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.reset-btn:hover {
+    background-color: #d35400;
+}
+
+.reset-btn:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+/* Disabled Button Styles */
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    #orders-section {
+        padding: 10px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+}
